@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div class="page-header"><h2 style="text-align: center; color: blue">Categories</h2></div>
+<div class="page-header"><h1 style="color:#b4db08">Categories</h1></div>
 
 	<form method="POST" action="{{ route('category.create') }}">
 		  <div class="form-group col-md-3 col-md-offset-3">

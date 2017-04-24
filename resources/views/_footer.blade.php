@@ -1,3 +1,3 @@
 <hr>
 
-<p class="text-center"> Copyright Akhyar - All Rights Reserved </p>
+<p class="text-center"> Copyright AuthLab - All Rights Reserved </p>

@@ -13,8 +13,8 @@
       body {
   font-family: "Open Sans", sans-serif;
   height: 100vh;
-  background: url("http://i.imgur.com/HgflTDf.jpg") 50% fixed;
-  background-size: cover;
+  background: url("https://thumbs.dreamstime.com/x/set-green-medical-cannabis-emblem-logo-classic-vintage-labels-black-background-80063097.jpg") 50% fixed;
+  background-size: 500px;
 }
 
 @keyframes spinner {
@@ -37,15 +37,16 @@
   width: 100%;
   min-height: 100%;
   padding: 20px;
-  background: rgba(4, 40, 68, 0.85);
+  
 }
 
 .login {
   border-radius: 2px 2px 5px 5px;
   padding: 10px 20px 20px 20px;
-  width: 90%;
-  max-width: 320px;
+  width: 100%;
+  max-width: 600px;
   background: #ffffff;
+  height: 400px;
   position: relative;
   padding-bottom: 80px;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
@@ -91,7 +92,7 @@
 .login input:focus {
   outline: none;
   color: #444;
-  border-color: #2196F3;
+  border-color: #b4db08;
   border-left-width: 35px;
 }
 .login input:focus + i.fa {
@@ -101,7 +102,7 @@
 }
 .login a {
   font-size: 0.8em;
-  color: #2196F3;
+  color: #000000;
   text-decoration: none;
 }
 .login .title {
@@ -116,7 +117,7 @@
   width: 100%;
   height: 100%;
   padding: 10px 10px;
-  background: #2196F3;
+  background: #000000;
   color: #fff;
   display: block;
   border: none;
@@ -149,7 +150,7 @@
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
 }
 .login:not(.loading) button:hover {
-  box-shadow: 0px 1px 3px #2196F3;
+  box-shadow: 0px 1px 3px #b4db08;
 }
 .login:not(.loading) button:focus {
   border-bottom-width: 4px;
@@ -179,24 +180,19 @@ footer a, footer a:link {
   <div class="wrapper">
 
   <form class="login" method="post" action="{{ route('auth') }}">
-    <p class="title">Log in</p>
+    <p class="title">Log In</p>
 
     <div class="messages">
-        
-      <div class="alert alert-warning" role="alert">
-        <i class="glyphicon glyphicon-exclamation-sign"></i>
-      </div>                    
-          
     </div>
     <input type="text" name="email" placeholder="E-mail" autofocus/>
     <i class="fa fa-user"></i>
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <input type="password" name = "password" placeholder="Password" />
     <i class="fa fa-key"></i>
-    <a href="#">Forgot your password?</a>
+    <a href="#"><u>Forgot your password?</u></a>
     <button >
       <i class="spinner"></i>
-      <span class="state">Log in</span>
+      <span class="state" style="font-size: 30px">Log in</span>
     </button>
   </form>
   <footer><a target="blank" href="https://authlab.io/">pharmacy@authlab.info</a></footer>
